@@ -1,9 +1,12 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-menu {
-    display: none; /* Hide the menu on small screens */
+    display: none; 
   }
   
+  .btn-primary{
+    margin-bottom: 20px;
+  }
   .hamburger-menu {
     display: block;
     cursor: pointer;
@@ -15,6 +18,9 @@
   /* navbar styles starts here */
 
   /* footer styles starts here */
+  .btn-primary{
+    margin-bottom: 20px;
+  }
   footer {
     padding: 20px 0;
   }
