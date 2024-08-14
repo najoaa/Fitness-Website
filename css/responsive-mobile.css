@@ -1,16 +1,26 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .nav-menu {
+  /* header */
+  .nav-link {
     display: none; 
-  }
-  
-  .btn-primary{
-    margin-bottom: 20px;
   }
   .hamburger-menu {
     display: block;
     cursor: pointer;
+    color: WHITE;
+    font-size: 30px;
   }
+
+  /* banner styles */
+  .banner-content{
+    display: block;
+    max-width: 700px;
+  }
+  /*shared styles  */
+  .btn-primary{
+    margin-bottom: 20px;
+  }
+
 
 
 
@@ -29,8 +39,30 @@
 }
 
 @media (max-width: 576px) {
+  /* shared styles */
+  h3{
+    font-size: 1.5rem;
+  }
 
   /* navbar styles starts here */
+  /* header */
+  .nav-link {
+    display: none; 
+  }
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    color: WHITE;
+    font-size: 20px;
+  }
+
+  /* banner styles */
+.banner-content{
+  display: block;
+}
+
+
+
 
   /* footer styles starts here */
   .btn-primary{
