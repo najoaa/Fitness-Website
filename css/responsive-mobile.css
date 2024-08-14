@@ -11,6 +11,21 @@
     display: block;
     cursor: pointer;
   }
+
+
+
+
+
+
+  /* team section */
+  .team-card-list {
+    grid-template-columns: 1fr;
+    margin: 2rem 2rem;
+  }
+
+  .team-card-content {
+    transform: translate(10%, -100%);
+  }
 }
 
 @media (max-width: 576px) {
