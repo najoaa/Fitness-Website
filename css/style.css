@@ -1,7 +1,5 @@
-
-/* font family */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-.inter-font{
+.inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -12,257 +10,348 @@
   font-weight: 400;
   font-style: normal;
 }
-
 /* shared styles */
+html, body {
+  height: 100%;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 *{
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: black;
-  color: white;
+h1{
+  font-size: 5rem;
 }
-/* main{
-  max-width: 1060px;
-  margin: 0 auto;
-} */
-/* .container{
-  max-width: 1060px;
-  margin: 0 auto;
-} */
-.banner-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
-
- h2{
-  font-size: 3rem;
-  color: white;
-  margin: 10px 0;
+h2{
+  font-size: 2.8rem;
+  text-align: left;
+}
+.h2-middle{
+  font-size: 2.8rem;
+  text-align: center;
 }
 p{
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-align: left;
-  
-  }
+color: rgba(255, 255, 255, 0.5);
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
+margin: 20px 0;
+}
+.run-primary-btn{
+  padding: 16px 40px 16px 40px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: white;
+  border: none;
+  gap: 10px;
+  margin-right: 20px ;
+  width: 50%;
+}
+.primary-btn{
+  padding: 16px 40px 16px 40px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: white;
+  border: none;
+  gap: 10px;
+  margin-right: 20px ;
+  margin-top: 20px;
+}
 
-/* HEADER SECTION */
-.header-banner{
+.secondary-btn{
+  padding: 16px 40px 16px 40px;
+  border-radius: 42px;
+  color: white;
+  border: 2px solid;
+  border-color: white;
+  background-color: transparent;
+  gap: 10px;
+}
+section {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+/* navbar styles */
+
+.navbar{
+  display: flex;
+  padding: 50px;
+  padding-bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-item{
+  list-style: none;
+  margin-right: 50px;
+}
+.nav-link{
+  text-decoration: none;
+  color:white;
+}
+.ham-burger{
+  display: none;
+  color: white;
+}
+.logo{
+  font-size: 2rem;
+  font-style: italic;
+  color: tomato;
+}
+
+/* banners styles starts here */
+.banner-header{
   background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 
 }
-header{
+.banner-header-content{
   max-width: 1060px;
   margin: 0 auto;
-  padding: 50px;
-
 }
-.logo {
-  font-size: 45px;
-  font-weight: 700;
-  color: #E6533C;
-  font-style: italic;
-}
-
-/* navbar related styles */
-.navbar{
+.banner{
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Habits section starts here */
+
+.container-habits p{
+  text-align: center;
+}
+.habits-items {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  text-align: center;
+}
+.habits-item{
+  display: block;
+  padding: 20px;
+}
+.habits-item h3{
+  margin-top: 10px;
+}
+.habits-item p{
+  line-height: 1.5rem;
+}
+.habits-items img{
+  border-radius: 250px;
+  border: 3px solid;
+  border-color:gray;
+}
+
+/* Run miles section starts here */
+.container-run-elements {
+  padding: 62px 0;
+}
+
+.container-run {
+  display: flex;
   justify-content: space-between;
-}
-.nav-item{
-  list-style: none;
-  margin-right: 1.8rem;
-}
-
-.nav-item a {
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: normal;
-  transition: background-color 0.3s ease;
-}
-.nav-item.active a {
-  background-color: #E6533C;
-  ;
-  border-radius: 30px;
+  align-items: center;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 50px;
+  margin: 25px;
 }
 
-.nav-link{
-  display: flex;
-  border: 1px solid;
-  border-color: rgba(255, 255, 255, 0.459);
-  border-radius: 30px;
-  padding: none;
-}
-.navlink{
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  margin: none;
-  color:white;
-}
-.hamburger-menu{
-  display: none;
-}
-
-/* banner section */
-
-.banner-title{
-  font-size: 5rem;
-}
-.banner-content p{
-  text-align: left;
-  padding: 30px 0 ;
-}
-
-.span{
-  font-style: italic;
-}
-.btn-primary{
-  background-color: #E6533C;
-  border: none;
-  border-radius: 40px;
-  padding: 1rem 4rem;
-  color: white;
-  font-size: 16px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  
-}
-
-.btn-secondary{
-  border: 1px solid white;
-  background-color: transparent;
-  border-radius: 40px;
-  padding: 1rem 4rem;
-  color: white;
-  font-size: 16px;
-}
-/* Habits section */
-.container-habits{
-  display: block;
-  margin-top: 80px;
-  text-align: left;
-  gap: 20px;
-}
-.container-habits h2{
-  text-align: center;
-}
-.habits-items{
-  display: flex;
-}
- .habits-item{
-  display: block;
-  padding: 40px;
- }
- .habits-item img{
-  border: 4px solid grey;
-  border-radius: 150px;
- }
- .habits-item h3{
-  margin: 10px 0;
-  font-size: 1.2rem;
-  text-align: center;
- }
- .habits-item p{
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
-
- }
-
- /* RUN MILE */
- .container-elements{
-  display: flex;
-  justify-content: center; 
- }
- .container-run{
-  display: flex;
-  justify-content: space-between;  align-items: center;
-  background-color: rgb(34, 34, 34);
-  border: 1PX solid;
-  margin: 8rem;
-  text-align: start;
-  padding: 3rem;
-  border-radius: 30px;
- }
-.container-run img{
-  width: 70%;
-  object-fit: none;
+.container-run img {
+  width: 100%;
+  object-fit: cover;
   border-radius: 2rem;
-  margin-left: 100px;
-  object-position: 66% 30% ;
-
 }
 
-.run-content p{
-  text-align: left;
-  margin: 20px 0;
-}
-
- /* trainings-and-Exercises */
-
-.trainning{
+/* trainning section */
+.trainning {
   position: relative;
+  overflow: hidden; /* Ensures the overlay doesn't spill out */
 }
 
-.exercise-name{
-position: absolute;
-top: 50%;
-left: 50%;
-color: white;
-font-size: 20px;
+.trainning::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 30% opacity */
+  z-index: 1; /* Ensures the overlay is on top of the image */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
 
+.trainning:hover::before {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker overlay on hover */
 }
-.trainning-content h2 {
-  text-align: left;
+
+.exercise-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  color: white;
+  font-size: 20px;
+  z-index: 2; /* Ensures the text is above the overlay */
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(136, 59, 59, 0.5); /* Adds a background behind text */
+  border-radius: 5px;
 }
-.trainning-content p{
-  text-align: left;
-  margin: 20px 0;
-}
-.trainning img{
+
+.trainning img {
   width: 100%;
   object-fit: cover;
   height: 250px;
-  background-color: rgba(255, 0, 0, 0.3);
+  display: block;
+  background-color: rgba(172, 5, 5, 0.3);
+}
 
-}
-.image::before{
-  background-color: rgba(255, 0, 0, 0.3);
-}
-.row-1{
+.row-1 {
   display: grid;
   grid-template-columns: 0.7fr 1fr 0.8fr;
   gap: 1rem;
-  border: 3px solid ;
+  border: 3px solid;
   gap: 0;
-  
+}
+.trainning {
+  position: relative;
+  overflow: hidden; /* Ensures the overlay doesn't spill out */
+}
+
+.trainning::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Ensures the overlay is on top of the image */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Different overlays for each section */
+.overlay-red::before {
+  background-color: rgba(255, 0, 0, 0.3); /* Red overlay */
+}
+
+.overlay-green::before {
+  background-color: rgba(0, 255, 0, 0.3); /* Green overlay */
+}
+
+.overlay-blue::before {
+  background-color: rgba(0, 0, 255, 0.3); /* Blue overlay */
+}
+
+.overlay-yellow::before {
+  background-color: rgba(255, 255, 0, 0.3); /* Yellow overlay */
+}
+
+.overlay-purple::before {
+  background-color: rgba(128, 0, 128, 0.3); /* Purple overlay */
+}
+
+.overlay-pink::before {
+  background-color: rgba(255, 192, 203, 0.3); /* Pink overlay */
+}
+
+/* Hover effect - you can make the overlay darker on hover */
+.trainning:hover::before {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker overlay on hover */
+}
+
+.exercise-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  color: white;
+  font-size: 20px;
+  z-index: 2; /* Ensures the text is above the overlay */
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a background behind text */
+  border-radius: 5px;
+}
+
+.trainning img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  display: block;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.8fr;
+  gap: 1rem;
+  border: 3px solid;
+  gap: 0;
+}
+.trainning {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  background-image: url('assets/exercise1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Adjust as needed */
+  position: relative;
+}
+
+.trainning::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.3); /* Red overlay with transparency */
+  z-index: 1;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.trainning:hover::before {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker overlay on hover */
+}
+
+.exercise-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a background behind text */
+  border-radius: 5px;
 }
 
 
-/* BMI CALCULATOR */
-.BMI-container{
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 80px;
-}
-.BMI-container h2{
-  text-align: left;
-}
-.BMI-container p{
-  text-align: left;
-}
+
+/* BMI CALCULATOR CODES */
+
 .bmi-content-box{
   background: rgb(34, 34, 34);
-
 }
 .bmi-content{
   display: flex;
@@ -276,24 +365,20 @@ font-size: 20px;
 
 .bmi-title{
 color: rgb(255, 255, 255);
-font-family: Inter;
 font-size: 28px;
 font-weight: 900;
-line-height: 120%;
-letter-spacing: 0%;
 text-align: left;
 }
 /* BMI TABLE */
 table{
   color: WHITE;
   table-layout: auto;
-}
+  border: 1px solid rgba(255, 255, 255, 0.1);}
 
 td ,th{
-  border: 1px solid;
   margin: 0;
   padding: 10px;
-  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 
@@ -304,7 +389,7 @@ form{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-input ,select {
+input ,select ,::placeholder{
   height: 52px;
   padding: 0 0.5rem;
   margin: 0.4rem;
@@ -312,185 +397,8 @@ input ,select {
   border-radius: 8px;
   cursor: pointer;
   background: rgb(77, 75, 75);
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   text-transform: capitalize;
   font-size: 16px;
   }
   
-  ::placeholder{
-    color: white;
-  }
-
-/* OUR TEAM */
-.our-team{
-  margin-top: 50px;
-}
-.our-team h2, p{
-text-align: center;
-}
-
-.team-card-list{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 2rem 10rem;
-  background-color: rgb(53, 52, 52);
-  border-radius: 1rem;
-  border: 2px solid;
-  align-items: center;
-  justify-content: center;
-}
-.team-card{
-  margin: 1.5rem;
-  padding: 0;
-}
-.team-card-list img{
-  width: 100%;
-  object-fit: cover;
-  height: 300px;
-  border-radius: 1rem;
-  filter: brightness(70%);
-}
-
-.team-card-content{
-transform: translate(20%, -150%);
-}
-.team-card-content h4{
-  font-size: 1.5rem;
-  margin: 0;
-}
-.team-card-content p{
-  font-size: 1rem;
-  text-transform: capitalize;
-  text-align: left;
-}
-
-/* Footer styles starts from here */
-footer{
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 40px 0;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  padding: 40px; 
-  max-width: 1200px; 
-  margin: 0 auto; 
-}
-
-.footer-column {
-  flex: 1; 
-  margin: 0 20px; 
-}
-
-
-.footer-column h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.footer-column p {
-  max-width: 300px; 
-  text-align: left ;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  color: #b3b3b3;
-  font-size: 20px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.grid-container-1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-item {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-.grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  
-}
-
-.grid-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  transition: background-color 0.3s ease;
-}
-
-.grid-item:nth-child(1) .overlay {
-  background-color: rgba(0, 255, 0, 0.4); 
-}
-
-.grid-item:nth-child(2) .overlay {
-  background-color: rgba(255, 0, 0, 0.4); 
-}
-
-.grid-item:nth-child(3) .overlay {
-  background-color: rgba(0, 0, 255, 0.4); 
-}
-
-
-.grid-item:nth-child(4) .overlay {
-  background-color: rgba(0, 255, 255, 0.4); /
-}
-
-.grid-item:nth-child(5) .overlay {
-  background-color: rgba(0, 255, 0, 0.4); }
-
-.grid-item:nth-child(6) .overlay {
-  background-color: rgba(0, 0, 255, 0.4);}
-
-.grid-item p {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  margin: 0;
-  color: white;
-  font-weight: bold;
-  z-index: 2;
-  font-size: 1.2rem;
-}
-
